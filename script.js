@@ -209,8 +209,8 @@ function search() {
 
 
 
-(()=>{
-    studentArr = JSON.parse(localStorage.getItem("studentArr")) || [];
+// (()=>{
+//     studentArr = JSON.parse(localStorage.getItem("studentArr")) || [];
 
-    showData();
-})();
+//     showData();
+// })();
