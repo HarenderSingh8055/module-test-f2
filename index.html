@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div class="main-wrapper">
+            <div class="student-wrapper">
+                <h1>Student Management CRUD</h1>
+                <div class="student-form">
+                    <form id="form">
+                        <div class="input-field-wrapper">
+                            <div>
+                                <input type="text" placeholder="Name" id="inputName" >
+                                <div class="errMsg"></div>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email" id="inputEmail" >
+                                <div class="errMsg"></div>
+                            </div>
+                            <div>
+                                <input type="number" placeholder="GPA"  id="inputGpa">
+                                <div class="errMsg"></div>
+                            </div>
+                            <div>
+                                <input type="number" placeholder="Age"  id="inputAge">
+                                <div class="errMsg"></div>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Degree"  id="inputDegree">
+                                <div class="errMsg"></div>
+                            </div>
+                        </div>
+                        <button id="addBtn" type="submit">Add Student</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <input type="text" onkeyup="search()" placeholder="Search By Name, email or degree" id="inputSearch">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="80px" >ID</th>
+                                <th>Student Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>GPA</th>
+                                <th>Degree</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

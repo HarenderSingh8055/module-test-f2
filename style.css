@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 60px;
+    background: #000;
+    color: #fff;
+}
+
+.student-wrapper{
+    margin-bottom: 100px;
+}
+
+.student-wrapper h1{
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.student-form button{
+    width: 40%;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 19px 20px;
+    background: #fff;
+    border: none;
+    margin-top: 55px;
+    cursor: pointer;
+}
+.input-field-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.input-field-wrapper input,.table-wrapper input{
+    width: 100%;
+    padding: 19px 30px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    background: #000;
+    outline: none;
+    border: 1px solid #FFFFFF;
+}
+
+.input-field-wrapper input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.errMsg{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+
+.table{
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    text-align: left;
+    min-height: 500px;
+    white-space: nowrap;
+}
+
+th,tr,td{
+    padding: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    border: 1px solid #fff;
+}
+
+
+.degree-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.degree-wrapper .options{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.degree-wrapper .options span{
+    font-size: 28px!important;
+    cursor: pointer;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+@media screen and (max-width:1150px) {
+    .table-responsive{
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .student-wrapper h1{
+        font-size: 28px;
+    }
+
+    .input-field-wrapper{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+    .input-field-wrapper input, .table-wrapper input{
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+
+    .student-form button{
+        font-size: 18px;
+        padding: 12px 15px;
+        margin-top: 30px;
+        width: 48%;
+    }
+
+    .student-wrapper{
+        margin-bottom: 50px;
+    }
+
+    .table{
+        margin-top: 40px;
+    }
+    th, tr, td{
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    body{
+        padding: 25px;
+    }
+    .student-wrapper h1{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .input-field-wrapper{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+
+    .student-form button{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .student-wrapper{
+        margin-bottom: 30px;
+    }
+
+    .table{
+        margin-top: 30px;
+        min-height: 200px;
+    }
+    th, tr, td{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
